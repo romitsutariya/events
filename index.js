@@ -13,8 +13,8 @@ app.use(bp.json());
 //Env Configuration
 const POST=process.env.POST_HOST || '127.0.0.1:4000';  // please add IP + post name
 const COMMENT=process.env.COMMENT_HOST || '127.0.0.1:5000';  // please add IP + post name
-const QUERY=process.env.POST_HOST || '127.0.0.1:8000';  // please add IP + post name
-const MODERATE=process.env.POST_HOST || '127.0.0.1:6000';  // please add IP + post name
+const QUERY=process.env.QUERY_HOST || '127.0.0.1:8000';  // please add IP + post name
+const MODERATE=process.env.MODERATE_HOST || '127.0.0.1:6000';  // please add IP + post name
 
 app.post("/events", (req, res) => {
     const event = req.body;  
